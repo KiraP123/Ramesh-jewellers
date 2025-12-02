@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections - Ramesh Jewellers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 custom-navbar">
+        <div class="container-fluid container-xl">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">RAMESH JEWELLERS</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="collection.html">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex align-items-center icon-group">
+                <button class="btn p-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i>
+                </button>
+                <a href="cart.html" class="btn p-0 position-relative">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="collection-content py-5">
+    <div class="container container-xl mt-5">
+        <h1 class="display-4 text-center mb-5">All Jewelry Collections</h1>
+        
+        <div class="row g-5">
+            
+            <div class="col-lg-3">
+                <button class="btn btn-dark w-100 d-lg-none mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#filterSidebar" aria-expanded="false" aria-controls="filterSidebar">
+                    <i class="fas fa-filter me-2"></i> Filter Products
+                </button>
+                
+                <div class="collapse d-lg-block" id="filterSidebar">
+                    <h4 class="fw-bold mb-3 text-dark">Filter By</h4>
+                    
+                    <div class="card mb-4 shadow-sm border-0">
+                        <div class="card-header bg-white fw-bold">Categories</div>
+                        <ul class="list-group list-group-flush small">
+                            <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Rings (12)</a></li>
+                            <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Necklaces & Pendants (25)</a></li>
+                            <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Earrings (30)</a></li>
+                            <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Bracelets (15)</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="card mb-4 shadow-sm border-0">
+                        <div class="card-header bg-white fw-bold">Material</div>
+                        <ul class="list-group list-group-flush small">
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="material1">
+                                <label class="form-check-label" for="material1">dubai bangles (35)</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="material2">
+                                <label class="form-check-label" for="material2">kada (15)</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="material3">
+                                <label class="form-check-label" for="material3"> Classic Chain (5)</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card mb-4 shadow-sm border-0">
+                        <div class="card-header bg-white fw-bold">Price Range</div>
+                        <div class="card-body">
+                            <input type="range" class="form-range" min="1000" max="100000" id="priceRange">
+                            <p class="small text-center mt-2">Price: ₹10,000 - ₹50,000</p>
+                            <button class="btn btn-sm btn-outline-dark w-100">Apply Filter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-6">
+                        <p class="text-muted mb-0">Showing 1–12 of 82 products</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <select class="form-select form-select-sm d-inline-block w-auto">
+                            <option selected>Sort by Latest</option>
+                            <option>Sort by Price: Low to High</option>
+                            <option>Sort by Price: High to Low</option>
+                            <option>Sort by Best Selling</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 product-grid">
+                    
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm text-center product-card">
+                            <div class="position-relative">
+                                <img src="assets/bangles.jpg" class="card-img-top" alt="Diamond Solitaire Ring">
+                                <span class="badge bg-danger position-absolute top-0 start-0 m-2">Sale</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Solitaire Bangle</h5>
+                                <p class="card-text text-accent fw-bold">₹45,000</p>
+                                <a href="cart.html" class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-bag me-1"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm text-center product-card">
+                            <img src="assets/bangles-1.jpg" class="card-img-top" alt="Gold Herringbone Necklace">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Herringbone Bangles</h5>
+                                <p class="card-text text-accent fw-bold">₹22,500</p>
+                                <a href="cart.html" class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-bag me-1"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm text-center product-card">
+                            <img src="assets/bangles-2.jpg" class="card-img-top" alt="Dangle Diamond Earrings">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Petite Bangles</h5>
+                                <p class="card-text text-accent fw-bold">₹35,000</p>
+                                <a href="cart.html" class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-bag me-1"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm text-center product-card">
+                            <img src="assets/bangles-3.jpg" class="card-img-top" alt="Cuff Bracelet">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Classic Gold Bangles</h5>
+                                <p class="card-text text-accent fw-bold">₹18,999</p>
+                                <a href="cart.html" class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-bag me-1"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm text-center product-card">
+                            <img src="assets/bangles-4.jpg" class="card-img-top" alt="Eternity Band">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Pave Bangles Band</h5>
+                                <p class="card-text text-accent fw-bold">₹28,000</p>
+                                <a href="cart.html" class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-bag me-1"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm text-center product-card">
+                            <img src="assets/bangles-5.jpg" class="card-img-top" alt="Eternity Band">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Pave Eternity Bangles Band</h5>
+                                <p class="card-text text-accent fw-bold">₹28,000</p>
+                                <a href="cart.html" class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-bag me-1"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm text-center product-card">
+                            <img src="assets/bangles-6.jpg" class="card-img-top" alt="Eternity Band">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Pave Dubai Bangles</h5>
+                                <p class="card-text text-accent fw-bold">₹28,000</p>
+                                <a href="cart.html" class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-bag me-1"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm text-center product-card">
+                            <img src="assets/bangles-7.jpg" class="card-img-top" alt="Eternity Band">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Casting Bangles</h5>
+                                <p class="card-text text-accent fw-bold">₹28,000</p>
+                                <a href="cart.html" class="btn btn-outline-dark btn-sm"><i class="fas fa-shopping-bag me-1"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                
+                <nav class="mt-5" aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3">RAMESH JEWELLERS</h5>
+                <p>Exquisite craftsmanship since 1990.</p>
+                <div class="social-icons fs-4">
+                    <a href="#" class="me-3 text-dark"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="me-3 text-dark"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 footer-links">
+                <h5 class="fw-bold mb-3">Quick Links</h5>
+                <a href="about.html">Our Story</a>
+                <a href="collection.html">All Collections</a>
+                <a href="#">FAQ & Shipping</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div class="col-md-4 mb-4 contact-details">
+                <h5 class="fw-bold mb-3">Contact Details</h5>
+                <p>
+                    <strong>Address:</strong><br>
+                    19/A Patwa Chawl, 1st Floor,<br>
+                    Mahajan Galli S.K. Menon Street,<br>
+                    Mumbai - 400 002
+                </p>
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:contact@rameshjewellers7.co.in">www.rameshjewellers7.co.in</a>
+                </p>
+            </div>
+        </div>
+        <div class="text-center pt-4 border-top">
+            <p class="mb-0 text-muted">© 2025 Ramesh Jewellers. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

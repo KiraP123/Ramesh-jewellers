@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ramesh Jewellers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        .contact-content { padding-top: 100px; padding-bottom: 50px; }
+        .map-container { height: 450px; border-radius: 5px; overflow: hidden; }
+        .map-container iframe { width: 100%; height: 100%; border: 0; }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 custom-navbar">
+        <div class="container-fluid container-xl">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">RAMESH JEWELLERS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collection.html">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center icon-group">
+                <button class="btn p-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i>
+                </button>
+                <a href="cart.html" class="btn p-0 position-relative">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="contact-content">
+    <div class="container">
+        <h1 class="display-3 text-center mb-5">Get In Touch</h1>
+        
+        <div class="row g-5">
+            
+            <div class="col-lg-5">
+                <h3 class="mb-4">Visit Our Studio or Write to Us</h3>
+                
+                <div class="p-4 bg-white shadow-sm mb-4">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-map-marker-alt me-3 text-accent"></i> Office Address</h5>
+                    <p class="mb-0">
+                        Ramesh Jewellers office<br>
+                        19/A Patwa Chawl, 1st Floor,<br>
+                        Mahajan Galli S.K. Menon Street,<br>
+                        Mumbai - 400 002, India
+                    </p>
+                </div>
+                
+                <div class="p-4 bg-white shadow-sm mb-4">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-envelope me-3 text-accent"></i> Email Us</h5>
+                    <p class="mb-0">
+                        General Inquiries: <a href="mailto:contact@rameshjewellers7.co.in">www.rameshjewellers7.co.in</a><br>
+                        Support: <a href="mailto:support@rameshjewellers7.co.in">support@rameshjewellers7.co.in</a>
+                    </p>
+                </div>
+                
+                <div class="p-4 bg-white shadow-sm">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-phone me-3 text-accent"></i> Call Us</h5>
+                    <p class="mb-0">
+                        Phone: +91 932 399 2724
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <h3 class="mb-4">Send Us a Message</h3>
+                <form class="p-4 bg-white shadow-lg">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-lg w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <h3 class="text-center mt-5 mb-4">Find Us on the Map</h3>
+        <div class="map-container mb-5 shadow-lg">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.394595874811!2d72.84572237508496!3d19.00690908218001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce7e68d18b2f%3A0x9d4b58e7d23d8c1c!2sMahajan%20Galli!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramesh Jewellers - Timeless Elegance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 custom-navbar">
+        <div class="container-fluid container-xl">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">RAMESH JEWELLERS</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collection.html">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex align-items-center icon-group">
+                <button class="btn p-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i>
+                </button>
+                <a href="cart.html" class="btn p-0 position-relative">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body p-4">
+                <form>
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search for necklaces, rings, gold..." aria-label="Search input">
+                        <button class="btn btn-dark" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section id="hero-carousel">
+    <div id="graceCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="assets/carousel-2.jpg" class="d-block w-100" alt="Timeless Elegance Jewelry">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                    <h1 class="display-1 fw-bold text-white text-uppercase animate__animated animate__fadeInDown">
+                        Timeless. <br> Perfectly Crafted.
+                    </h1>
+                    <p class="lead text-white animate__animated animate__fadeInUp d-none d-md-block">
+                        Certified quality, unique designs, and unmatched service.
+                    </p>
+                    <a href="collection.html" class="btn btn-light btn-lg mt-3 animate__animated animate__fadeInUp shop-btn">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+            
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="assets/carousel-1.jpg" class="d-block w-100" alt="New Rings Collection">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-start h-100 text-start ps-5">
+                    <span class="text-white fw-light fs-4 animate__animated animate__fadeInLeft">New Arrival</span>
+                    <h2 class="display-3 fw-light text-white text-uppercase animate__animated animate__fadeInLeft">
+                        The Solitaire <br> Collection
+                    </h2>
+                    <a href="collection.html" class="btn btn-outline-light btn-lg mt-3 animate__animated animate__fadeInUp">
+                        View Details
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
+        </div>
+</section>
+
+<section class="new-collection-section py-5 my-5">
+    <div class="container container-xl">
+        
+        <div class="text-center mb-5">
+            <h2 class="text-uppercase display-5 new-collection-title">OUR NEW COLLECTION</h2>
+        </div>
+
+        <div class="row g-4 align-items-center">
+            
+            <div class="col-lg-3 col-md-6 d-none d-sm-block">
+                <div class="img-box h-100 d-flex justify-content-start align-items-start">
+                    <img src="assets/dubai-1.jpg" class="img-fluid shadow-sm" alt="Pearl necklace">
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 order-md-3 order-lg-2">
+                <div class="text-center p-3 p-md-5">
+                    <img src="assets/dubai-2.jpg" class="img-fluid rounded-0 shadow-lg" alt="Model wearing a gold pendant">
+                    
+                    <div class="mt-4">
+                        <a href="collection.html" class="text-uppercase text-dark fw-bold text-decoration-none border-bottom border-dark pb-1 discover-link">
+                            Shop All Collections <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 order-md-2 order-lg-3">
+                <div class="img-box h-100 d-flex justify-content-end align-items-start">
+                    <img src="assets/dubai-3.jpg" class="img-fluid shadow-sm" alt="Model wearing elegant earrings and rings">
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="row mt-5 pt-4 border-top text-center text-muted feature-row">
+            <div class="col-md-3 col-6 mb-3">
+                <i class="fas fa-hands-holding-circle fs-5 me-2 text-accent"></i> Handcrafted
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+                <i class="fas fa-certificate fs-5 me-2 text-accent"></i> Certified Quality
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+                <i class="fas fa-truck-fast fs-5 me-2 text-accent"></i> Free Shipping
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+                <i class="fas fa-shield-halved fs-5 me-2 text-accent"></i> Secure Payments
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section class="story-section py-5 my-5">
+    <div class="container container-xl">
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-lg-5">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <img src="assets/carousel-1.jpg" class="img-fluid shadow-sm" alt="Jewelry closeup on white surface">
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/home-1.jpg" class="img-fluid shadow-sm mt-5" alt="Hand holding a pendant">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 text-center">
+                <h3 class="display-6 mb-4">Jewelry That Tells Your Story</h3>
+                <div class="story-icon mb-4">
+                    <i class="fas fa-star-of-life display-1 text-accent"></i>
+                </div>
+                <p class="lead text-muted">
+                    Every piece in the Ramesh Jewellers collection is designed with intention and crafted with passion, creating heirlooms for the next generation.
+                </p>
+                <a href="about.html" class="btn btn-outline-dark mt-3">Read Our Story</a>
+            </div>
+
+            <div class="col-lg-3 d-none d-lg-block">
+                <img src="assets/dubai-1.jpg" class="img-fluid shadow-sm" alt="Elegantly displayed ring">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="reviews-section py-5 my-5">
+    <div class="container container-xl">
+        <div class="row g-4 align-items-center">
+            
+            <div class="col-lg-7">
+                <h2 class="display-4 mb-4 review-heading">Hear From Our Happy Customers</h2>
+                <div class="blockquote p-4 bg-white shadow-sm border-start border-4 border-accent">
+                    <i class="fas fa-quote-left fs-1 text-accent mb-3 d-block"></i>
+                    <p class="mb-3 fst-italic">"The quality and craftsmanship of my new necklace exceeded all my expectations. The team at Ramesh Jewellers was incredibly helpful. Truly timeless pieces!"</p>
+                    <footer class="blockquote-footer text-end">
+                        <cite title="Source Title">Priya S., Mumbai</cite>
+                    </footer>
+                </div>
+                <div class="mt-4">
+                    <h4 class="mb-3">Stay Connected</h4>
+                    <p>Sign up for our newsletter to receive exclusive offers and first looks at new collections.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your Email Address">
+                        <button class="btn btn-dark" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-lg-5 text-center">
+                <img src="assets/smile.jpg" class="img-fluid shadow-lg" alt="Model smiling">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="offer-banner py-5" style="background-image: url('assets/images/offer-banner.jpg');">
+    <div class="container text-center text-white">
+        <h3 class="text-uppercase fw-bold text-accent">Limited Time Offer</h3>
+        <h2 class="display-4 mb-4">Up To 30% Off Diamond Pieces</h2>
+        <a href="collection.html" class="btn btn-light btn-lg">Shop The Sale</a>
+    </div>
+</section>
+
+<footer class="mt-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3">RAMESH JEWELLERS</h5>
+                <p>Exquisite craftsmanship since 1990.</p>
+                <div class="social-icons fs-4">
+                    <a href="#" class="me-3 text-dark"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="me-3 text-dark"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 footer-links">
+                <h5 class="fw-bold mb-3">Quick Links</h5>
+                <a href="about.html">Our Story</a>
+                <a href="collection.html">All Collections</a>
+                <a href="#">FAQ & Shipping</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div class="col-md-4 mb-4 contact-details">
+                <h5 class="fw-bold mb-3">Contact Details</h5>
+                <p>
+                    <strong>Address:</strong><br>
+                    19/A Patwa Chawl, 1st Floor,<br>
+                    Mahajan Galli S.K. Menon Street,<br>
+                    Mumbai - 400 002
+                </p>
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:contact@rameshjewellers7.co.in">www.rameshjewellers7.co.in</a>
+                </p>
+            </div>
+        </div>
+        <div class="text-center pt-4 border-top">
+            <p class="mb-0 text-muted">&copy; 2025 Ramesh Jewellers. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>

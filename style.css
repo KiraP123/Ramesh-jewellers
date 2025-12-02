@@ -1,0 +1,209 @@
+/* Custom CSS: assets/css/style.css */
+
+/* --- GLOBAL STYLES --- */
+:root {
+    --primary-font: 'Playfair Display', serif;
+    --secondary-font: 'Jost', sans-serif;
+    --accent-color: #b8915b; /* Gold/Accent Color */
+    --background-color: #f7f5f2; /* Light beige/taupe background */
+    --text-dark: #333;
+    --text-light: #555;
+}
+
+body {
+    font-family: var(--secondary-font);
+    padding-top: 70px; /* Space for fixed navbar */
+    background-color: var(--background-color);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+/* --- NAVBAR STYLES --- */
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+.icon-group .btn {
+    color: var(--text-dark);
+}
+
+/* --- CAROUSEL STYLES (Advanced) --- */
+#hero-carousel {
+    height: 100vh;
+    margin-top: -70px; /* Pull it up to cover the whole screen, minus navbar height */
+}
+
+#hero-carousel .carousel-item {
+    height: 100vh;
+}
+
+#hero-carousel img {
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.6; /* Darken the image for text contrast */
+    filter: brightness(0.7);
+}
+
+#hero-carousel .carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 100px 15%; /* Add space for text */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption h1 {
+    font-size: 5.5rem;
+    letter-spacing: 5px;
+    line-height: 1.1;
+}
+
+.carousel-caption .shop-btn {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 992px) {
+    .carousel-caption h1 { font-size: 3rem; }
+}
+@media (max-width: 576px) {
+    .carousel-caption h1 { font-size: 2.5rem; }
+    #hero-carousel { height: 70vh; margin-top: -50px; }
+    #hero-carousel img { height: 70vh; }
+}
+
+/* --- NEW COLLECTION SECTION --- */
+.new-collection-section {
+    padding: 80px 0;
+}
+
+.new-collection-title {
+    position: relative;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 80px !important;
+}
+
+/* Decorative X Marks */
+.new-collection-title::before,
+.new-collection-title::after {
+    content: '✖';
+    font-size: 1.5rem;
+    color: #ccc;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.new-collection-title::before { left: 10%; }
+.new-collection-title::after { right: 10%; }
+
+.discover-link {
+    transition: color 0.3s;
+}
+.discover-link:hover {
+    color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+}
+
+/* --- STORY SECTION --- */
+.story-icon i {
+    color: var(--accent-color);
+    opacity: 0.2;
+    transform: rotate(45deg);
+    transition: opacity 0.3s;
+}
+.story-icon:hover i {
+    opacity: 0.5;
+}
+
+/* --- REVIEWS SECTION --- */
+.reviews-section {
+    background-color: #edeae5; /* Slightly darker beige box for this section */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.review-heading {
+    letter-spacing: 1px;
+    margin-bottom: 60px !important;
+}
+.blockquote {
+    border-color: var(--accent-color) !important;
+}
+
+/* --- LIMITED TIME OFFER BANNER --- */
+.offer-banner {
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.offer-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: -1;
+}
+.offer-banner h3 {
+    letter-spacing: 2px;
+}
+
+/* --- FOOTER STYLES --- */
+footer {
+    background-color: #e9e5e0; 
+    color: var(--text-light);
+}
+.footer-links a, .contact-details a {
+    color: var(--text-light);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+.footer-links a:hover, .contact-details a:hover {
+    color: var(--accent-color);
+}
+.social-icons a {
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: var(--accent-color) !important;
+}
